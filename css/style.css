@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/* 공통 부분
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.7;
+    min-width: 730px;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+img {
+    max-width: 100%;
+}
+.myfont {
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+/* 큰 배경 이미지 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* HEADER
+------------------------------- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.logo {
+    margin-top: 14px;
+    font-size: 50px;
+}
+.logo span {
+    color: rgb(255, 145, 0);
+}
+.logo a{
+    color: black;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10%;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: rgb(120, 120, 120);
+}
+.main-nav a:hover {
+    color: rgb(255, 145, 0);
+}
+
+/* HOME
+------------------------------- */
+#home {
+    background-image: url(../images/consert.jpg), linear-gradient(white, rgba(255, 255, 255, 0.519));
+    background-blend-mode: luminosity;
+    min-height: 100vh;
+}
+#home .logo a{
+    color: white;
+}
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+#home .home-title span{
+    font-size: 70px;
+}
+#home .main-nav {
+    padding: 0 100px;
+    margin-top: 40px;
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(130px, 1fr));
+}
+#home .main-nav li{
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+/* 페이지 상단 타이틀 */
+.page-title {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 70px;
+}
+
+/* Inform
+------------------------------- */
+#inform {
+    background-image: url(../images/inform.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+
+/* various
+------------------------------- */
+#various {
+    background-image: url(../images/squid_game.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+
+/* influence
+------------------------------- */
+#influence {
+    background-image: url(../images/kpop_map.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+
+/* 사이드바 */
+aside {
+    width: 15%;
+}
+.sub-title {
+    font-size: 20px;
+    border-bottom: 3px #ddd solid;
+}
+.sub-menu {
+    font-size: 15px;
+    margin-bottom: 60px;
+    list-style: none;
+}
+.sub-menu .bottom {
+    border-bottom: 1px #ddd solid;
+    padding-bottom: 10px;
+}
+.sub-menu a {
+    color: black;
+    padding-top: 10px;
+    display: block;
+}
+.sub-menu a:hover {
+    color: rgb(255, 145, 0);
+}
+.sub-sub-menu li{
+    list-style-position: inside;
+    font-weight: normal;
+}
+.sub-sub-menu a {
+    display: inline;
+    color: rgb(120, 120, 120);
+}
+
+/* 컨텐츠 */
+.contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/* 기사 부분 */
+article {
+    width: 80%;
+}
+article p {
+    padding: 0 0 30px 30px;
+}
+article li {
+    list-style-type: none;
+    padding-left: 30px;
+}
+article > div {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
+}
+article .post-title {
+    font-size: 40px;
+}
+article a {
+    color: rgb(255, 145, 0);
+}
+article .more_inf {
+    color:rgb(120, 120, 120);
+}
+article .flag {
+    box-shadow: 2px 2px 2px rgb(120, 120, 120);
+    width: 30px;
+    height: 20px;
+}
+article strong {
+    padding-left: 10px;
+}
+
+/* 출처 */
+.source {
+    text-align: right;
+    font-size: 10px;
+    color: #a5a5a5;
+    border-bottom: none;
+}
+
+/* 푸터
+------------------------------- */
+footer {
+    background: rgb(255, 145, 0);
+    text-align: center;
+    padding: 26px 0;
+}
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: 0.875rem;
+}
